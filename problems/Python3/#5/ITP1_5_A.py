@@ -4,6 +4,6 @@ while True:
         break
     for j in range(H):
         for i in range(W):
-            print('#', end='')  # end=''で改行をoff
+            print('#', end='')  # end=''で改行off
         print()  # print()で改行
     print()  # データセットごとの空行
