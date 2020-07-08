@@ -1,2 +1,2 @@
-# PythonLearning
+# LanguageLearning
 いつでも見返せるように
