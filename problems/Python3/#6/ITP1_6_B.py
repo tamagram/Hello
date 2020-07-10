@@ -21,7 +21,7 @@ for judge in range(n):
 # enumerateでcardsリストの要素(S,H,C,D)をchに代入
 for j, ch in enumerate(cards):
 
-    # それぞれcards要素のindexは0~12まであるのでその分繰り返す
+    #cardの要素をrankに代入しその要素数だけ繰り返す
     for i, rank in enumerate(ch):
         if cards[j][i] == False:
             print(f'{pattern[j]} {i+1}')
