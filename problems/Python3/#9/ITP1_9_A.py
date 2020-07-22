@@ -14,5 +14,5 @@ while 1:
     else:
         T.extend(map(str.lower, line))
 
-#TリストにWがいくつ含まれているか
+# TリストにWがいくつ含まれているか
 print(T.count(W))
