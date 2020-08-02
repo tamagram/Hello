@@ -3,7 +3,8 @@ class dice:
     def __init__(self, face):
         self.face = face
 
-    def searchFace(self, s):
+    #selfを基準にほかのインスタンスと比較する
+    def comparisonFace(self, other):
 
         # N = [1, 5, 2, 3, 0, 4]
         # S = [4, 0, 2, 3, 5, 1]
@@ -21,11 +22,11 @@ class dice:
 
                         t = self.face
 
-                        # 上の面と前の面が一致しているとき
-                        if t[0] == s[0] and t[1] == s[1]:
+                        # selfの面と比較対象の面が一致しているか
+                        if self.face == other.face:
 
                             # returnを使うことでbreakが必要なくなる
-                            return self.face[2]
+                            return 'Yes'
 
                         self.face = [t[1], t[5], t[2], t[3], t[0], t[4]]
 
@@ -34,17 +35,13 @@ class dice:
                 self.face = [t[3], t[1], t[0], t[5], t[4], t[2]]
 
             self.face = [t[2], t[1], t[5], t[0], t[4], t[3]]
+        
+        return 'No'
 
 
-# インスタンスaのfaceに出目のlistを割り当てる
+# インスタンスaとbのfaceに出目のlistを割り当てる
 a = dice(list(map(int, input().split())))
+b = dice(list(map(int, input().split())))
 
-q = int(input())
-
-for i in range(q):
-    s = [0, 0]
-    s[0], s[1] = map(int, input().split())
-
-    # 戻り値である右側面が出力
-    print(a.searchFace(s))
+print(a.comparisonFace(b))
 
