@@ -1,3 +1,4 @@
+import math
 # 浮動小数点数float
 r = float(input())
-print(f'{r ** 2 * 3.141592653589:.6f} {r * 2 * 3.141592653589:.6f}')
+print(f'{r ** 2 * math.pi:.6f} {r * 2 * math.pi:.6f}')

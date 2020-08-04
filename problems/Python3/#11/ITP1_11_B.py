@@ -11,14 +11,11 @@ class dice:
         # W = [2, 1, 5, 0, 4, 3]
 
         # 4回転
-        for l in range(4):
-
-            for k in range(4):
-
-                for j in range(4):
-
-                    for i in range(4):
-
+        # タプルを_にすることでUnused variableを避ける
+        for _ in range(4):
+            for _ in range(4):
+                for _ in range(4):
+                    for _ in range(4):
                         t = self.face
 
                         # 上の面と前の面が一致しているとき
@@ -28,11 +25,8 @@ class dice:
                             return self.face[2]
 
                         self.face = [t[1], t[5], t[2], t[3], t[0], t[4]]
-
                     self.face = [t[4], t[0], t[2], t[3], t[5], t[1]]
-
                 self.face = [t[3], t[1], t[0], t[5], t[4], t[2]]
-
             self.face = [t[2], t[1], t[5], t[0], t[4], t[3]]
 
 
