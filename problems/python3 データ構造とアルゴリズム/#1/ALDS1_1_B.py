@@ -1,4 +1,4 @@
-# 最大公約数 GreatestCommonDivisor
+# 最大公約数 GreatestCommonDivisor O(logb)
 def gcd(x, y):
 
     # ユークリッドの互除法
