@@ -4,6 +4,7 @@ def insertionSort(A, N):
     # 要素分繰り返す1 <= i < N
     for i in range(1, N):
 
+        # 変化を出力(ソート処理とは直接関係ない)
         print(" ".join(map(str, A)))
 
         # ソートするときに詰めていくため取り出しておく
