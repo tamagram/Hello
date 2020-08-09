@@ -1,4 +1,4 @@
-# 挿入ソート
+# 挿入ソート O(n**2)
 def insertionSort(A, N):
 
     # 要素分繰り返す1 <= i < N
