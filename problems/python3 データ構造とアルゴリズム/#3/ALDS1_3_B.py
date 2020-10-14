@@ -1,3 +1,4 @@
+#QUEUE
 class queue:
     def __init__(self, quantum):
         self.head = self.tail = 0
