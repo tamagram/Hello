@@ -1,2 +1,2 @@
-# LanguageLearning
-いつでも見返せるようにproblemsへ
+# Hello
+初めて作ったリポジトリ
